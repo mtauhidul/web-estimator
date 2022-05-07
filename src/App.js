@@ -27,38 +27,46 @@ const App = () => {
         <h1>Cost Estimator</h1>
         <div className='form'>
           <form action=''>
-            <TextField
-              id='outlined-basic'
-              label='How many participants?'
-              variant='outlined'
-              onChange={(e) =>
-                setData({ ...data, participants: e.target.value })
-              }
-            />
-            <TextField
-              id='outlined-basic'
-              label='How many hours per session?'
-              variant='outlined'
-              onChange={(e) =>
-                setData({ ...data, hoursPerSession: e.target.value })
-              }
-            />
-            <TextField
-              id='outlined-basic'
-              label='How many sessions per week?'
-              variant='outlined'
-              onChange={(e) =>
-                setData({ ...data, sessionsPerWeek: e.target.value })
-              }
-            />
-            <TextField
-              id='outlined-basic'
-              label='How many total sessions?'
-              variant='outlined'
-              onChange={(e) =>
-                setData({ ...data, totalSessions: e.target.value })
-              }
-            />
+            <div className='textInput'>
+              <TextField
+                id='outlined-basic'
+                label='How many participants?'
+                variant='outlined'
+                onChange={(e) =>
+                  setData({ ...data, participants: e.target.value })
+                }
+              />
+            </div>
+            <div className='textInput'>
+              <TextField
+                id='outlined-basic'
+                label='How many hours per session?'
+                variant='outlined'
+                onChange={(e) =>
+                  setData({ ...data, hoursPerSession: e.target.value })
+                }
+              />
+            </div>
+            <div className='textInput'>
+              <TextField
+                id='outlined-basic'
+                label='How many sessions per week?'
+                variant='outlined'
+                onChange={(e) =>
+                  setData({ ...data, sessionsPerWeek: e.target.value })
+                }
+              />
+            </div>
+            <div className='textInput'>
+              <TextField
+                id='outlined-basic'
+                label='How many total sessions?'
+                variant='outlined'
+                onChange={(e) =>
+                  setData({ ...data, totalSessions: e.target.value })
+                }
+              />
+            </div>
             <br />
             <Button onClick={(e) => costEstimate(e)} variant='contained'>
               Estimate

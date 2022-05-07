@@ -15,9 +15,13 @@ const App = () => {
     e.preventDefault();
 
     if (data.participants > 12) {
-      setCost(data.hoursPerSession * 1.5 * 2 * 24.0 + 2500);
+      setCost(
+        data.hoursPerSession * data.totalSessions * 1.5 * 2 * 24.0 + 2500
+      );
     } else {
-      setCost(data.hoursPerSession * 1.5 * 1 * 24.0 + 2500);
+      setCost(
+        data.hoursPerSession * data.totalSessions * 1.5 * 1 * 24.0 + 2500
+      );
     }
   };
 

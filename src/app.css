@@ -52,7 +52,7 @@ h1 {
 
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
     text-align: left;
-    width: 250px;
+    width: 250px !important;
 
 
 }
@@ -69,5 +69,6 @@ h1 {
 
 .textInput {
     margin: 8px auto !important;
-    width: 250px;
+    width: 250px !important;
+    margin: 0 auto !important;
 }

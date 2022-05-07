@@ -69,4 +69,5 @@ h1 {
 
 .textInput {
     margin: 8px auto !important;
+    width: 250px;
 }
